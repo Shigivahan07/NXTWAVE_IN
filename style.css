@@ -330,7 +330,7 @@ option{
     }
 
     .content p {
-        font-size: 14px; /* Reduce paragraph font size */
+        font-size: 4px; /* Reduce paragraph font size */
     }
 }
 
