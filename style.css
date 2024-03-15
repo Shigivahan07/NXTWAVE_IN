@@ -324,3 +324,13 @@ option{
     text-align: center;
     color: antiquewhite;
 }
+@media screen and (max-width: 768px) {
+    .content h2 {
+        font-size: 24px; /* Reduce heading font size */
+    }
+
+    .content p {
+        font-size: 14px; /* Reduce paragraph font size */
+    }
+}
+
