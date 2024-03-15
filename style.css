@@ -1,5 +1,6 @@
-*{
+body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(0, 0, 0);
 }
 .container {
   display: flex;
@@ -9,10 +10,22 @@
   max-width: 1200px;
 }
 .header{
-color: #ffffff;
+color: #000000;
 font-size: 40px;
 text-align: center;
 }
+.headers{
+  color: #000000;
+  font-size: 40px;
+  text-align: center;
+  background-color: #DB6C79;
+  border-radius: 100px;
+  padding: 5px;
+  }
+.header:hover{
+  color: #7f7f7f;
+  }
+
 .card {
   flex: 0 1 calc(50% - 20px); /* Adjust width to fit two cards in a row */
   aspect-ratio: 1 / 0.7;
@@ -27,7 +40,7 @@ text-align: center;
 
 .card .image-box {
   width: 100%;
-  height: auto;
+  height: 100%;
   border-radius: 8px 8px 0 0;
   overflow: hidden;
 }
@@ -107,7 +120,7 @@ text-align: center;
 }
 
 nav {
-    background-color: #000000;
+    background-color: #E8AA14;
     padding: 10px 0;
     margin-bottom: 20px; 
     border-radius: 50px;
@@ -124,7 +137,7 @@ nav {
   }
   
   li a {
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     font-size: 18px;
   }
@@ -133,7 +146,7 @@ nav {
     color: lightgray;
   }
 #flight-booking {
-    background-color: #000000; 
+    background-color: #7D82B8; 
     padding: 40px;
     text-align: center;
     border-radius: 40px; 
@@ -157,7 +170,8 @@ nav {
   }
   
   #flight-booking input[type="text"],
-  #flight-booking input[type="date"] {
+  #flight-booking input[type="date"],
+  #flight-booking input[type="number"]{
     width: calc(100% - 20px);
     padding: 10px;
     margin-bottom: 20px;
@@ -170,6 +184,7 @@ nav {
     color: rgb(0, 0, 0);
     padding: 12px 24px;
     border: none;
+    border-width: 0px;
     border-radius: 50px;
     cursor: pointer;
     font-size: 20px; 
@@ -196,7 +211,7 @@ section {
 }
 
 #hotel-booking {
-    background-color: #000000; 
+    background-color: #CFB3CD; 
     padding: 40px;
     text-align: center;
     border-radius: 40px; 
@@ -220,7 +235,8 @@ section {
 }
 
 #hotel-booking input[type="text"],
-#hotel-booking input[type="date"] {
+#hotel-booking input[type="date"],
+#hotel-booking input[type="number"]{
     width: calc(100% - 20px);
     padding: 10px;
     margin-bottom: 20px;
@@ -233,10 +249,25 @@ section {
     color: rgb(0, 0, 0);
     padding: 12px 24px;
     border: none;
+    border-width: 0px;
     border-radius: 50px;
     cursor: pointer;
     font-size: 20px;
     transition: transform 0.3s ease; 
+}
+#room-type{
+  width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #4c4c4c; 
+    border-radius: 50px;
+}
+option{
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #4c4c4c; 
+  border-radius: 50px;
 }
 
 #hotel-booking button[type="submit"]:hover {
@@ -246,7 +277,7 @@ section {
 
 /* Package Collections */
 #package-collections {
-    background-color: #000000; 
+    background-color: #ACC196; 
     padding: 40px;
     text-align: center;
     border-radius: 40px;
@@ -259,9 +290,9 @@ section {
 }
 
 .package-collection {
-    background-color: #ffffff;
+    background-color: #799496;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 50px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
 }
@@ -277,11 +308,11 @@ section {
 }
 
 .package-collection button {
-    background-color: #333;
-    color: white;
+    background-color: #49475B;
+    color: #ffffff;
     padding: 8px 16px;
     border: none;
-    border-radius: 5px;
+    border-radius: 50px;
     cursor: pointer;
 }
 
@@ -291,4 +322,5 @@ section {
 
 .foot{
     text-align: center;
+    color: antiquewhite;
 }
